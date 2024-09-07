@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a23;
+    color: #ffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh ;
+    position: relative;
+}
+
+.palindrome-definition{
+    width: min(100vw, 450px);
+    font-size: 1.3rem;
+    min-height: 140px;
+    background-color: #dd7f02;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+hr {
+    width: 50vw;
+}
+
+.title{
+    margin: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.palindrome-div{
+    background-color: #ffff;
+    border-radius: 20px;
+    width: min(100vw, 450px);
+    font-size: 1.3rem;
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #0a0a23;
+    margin-bottom: 1.5rem;
+}
+
+.palindrome-input{
+    height: 30px;
+    width: 250px;
+    border: none;
+    border-bottom: 2px solid #dd7f02;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+.palindrome-btn{
+    background-color: #dd7f02;
+    border: none;
+    border-radius: 15px;
+    width: 90px;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .palindrome-div, 
+    .palindrome-definition {
+      width: 100%; /* Make the content take the full width on mobile */
+      max-width: 450px; /* Ensure it doesn't exceed 450px */
+      margin: 10px 0; /* Add vertical spacing */
+    }
+    .palindrome-input {
+        width: 100%; /* Input takes full width */
+        max-width: 250px; /* Keep the input width manageable */
+      }
+    
+      .palindrome-btn {
+        width: 100%; /* Button takes full width */
+        max-width: 150px; /* Limit button width */
+      }
+  
+}
