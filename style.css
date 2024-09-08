@@ -120,3 +120,21 @@ hr {
       }
   
 }
+
+
+.palindrome-input-invalid{
+    animation: shake 333ms;
+   
+}
+
+@keyframes shake{
+    25%{
+        transform: translateX(4px);
+    }
+    50%{
+        transform: translateX(-4px);
+    }
+    75%{
+        transform: translateX(5px);
+    }
+}
