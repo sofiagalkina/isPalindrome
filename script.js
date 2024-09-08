@@ -28,8 +28,10 @@ const isPalindrome = (string) => {
 
     if(cleanString === reversed){
         result.innerText = `${string} is a palindrome!`
+        userInput.value = "";
     } else {
         result.innerText = `${string} is not a palindrome`
+        userInput.value = "";
     }
 }
 
