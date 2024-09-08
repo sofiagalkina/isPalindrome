@@ -2,9 +2,6 @@ const userInput = document.getElementById('text-input');
 const checkButton = document.getElementById('check-btn');
 const result = document.getElementById('result');
 
-
-
-
 const isEmpty = () => {
     const inputLength = userInput.value.length;
     if(inputLength >= 1){
