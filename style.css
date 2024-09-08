@@ -78,6 +78,11 @@ hr {
 }
 
 @media only screen and (max-width: 768px){
+
+    img{
+        max-width: 500px;
+        max-height: 200px;
+    }
     .container{
         display: flex;
         flex-direction: column;
@@ -85,12 +90,22 @@ hr {
         justify-content: center;
         text-align: center;
     }
+    hr{
+        width: 100%;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
 
     .palindrome-div, 
     .palindrome-definition {
       width: 100%; /* Make the content take the full width on mobile */
-      max-width: 450px; /* Ensure it doesn't exceed 450px */
+      max-width: 330px; /* Ensure it doesn't exceed 450px */
       margin: 10px 0; /* Add vertical spacing */
+      text-align: center;
+      font-size: 1rem;
+      border-radius: 10px;
     }
     .palindrome-input {
         width: 100%; /* Input takes full width */
@@ -100,6 +115,8 @@ hr {
       .palindrome-btn {
         width: 100%; /* Button takes full width */
         max-width: 150px; /* Limit button width */
+        font-size: 1.2rem;
+        cursor: pointer;
       }
   
 }
